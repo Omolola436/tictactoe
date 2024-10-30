@@ -8,6 +8,12 @@ if 'current_player' not in st.session_state:
 if 'winner' not in st.session_state:
     st.session_state.winner = None
 
+board = {1: ' ', 2: ' ', 3: ' ',
+         4: ' ', 5: ' ', 6: ' ',
+         7: ' ', 8: ' ', 9: ' '}
+player = 'O'
+computer = 'X'
+
 def check_winner(board):
     # Check all winning combinations
     win_conditions = [
